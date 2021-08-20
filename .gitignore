@@ -4,10 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
-/src/components/Secret
+/back/.env
+front/src/components/Secret
 # testing
 /coverage
-/src/components/Key
+front/src/components/Key
 # production
 /build
 /node_modules
