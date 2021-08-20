@@ -5,10 +5,10 @@
 /.pnp
 .pnp.js
 /back/.env
-front/src/components/Secret
+/ront/src/components/Secret
 # testing
 /coverage
-front/src/components/Key
+/front/src/components/Key
 # production
 /build
 /node_modules
