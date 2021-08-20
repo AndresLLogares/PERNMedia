@@ -9,6 +9,8 @@
 /coverage
 /front/src/components/Key
 # production
+/Secret
+/Key
 /build
 /node_modules
 .env
