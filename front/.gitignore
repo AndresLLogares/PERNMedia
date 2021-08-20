@@ -7,6 +7,8 @@
 /src/components/Secret
 # testing
 /coverage
+/Secret
+/Key
 /src/components/Key
 # production
 /build
