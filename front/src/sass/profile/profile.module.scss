@@ -1,0 +1,471 @@
+$Pink:#FF99C8;
+$Cream:#FCF6BD;
+$LightBlue:#D0F4DE;
+$Blue:#A9DEF9;
+$Purple:#E4C1F9;
+$White: #FFFFFF;
+$Black: #231B1B;
+
+@font-face {
+font-family: 'Bukhari';
+src: url('../../components//fonts/bukhari/Bukhari\ Script.ttf');
+font-weight: 900;
+font-style:normal;
+font-stretch: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap');
+
+.examples{
+font-family: 'Fanwood Text', serif;
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Noto Sans', sans-serif;
+font-family:'Bukhari';
+}
+
+.backProfile{
+width: 100%;
+min-height: 120vh;
+height: fit-content;
+background-color: $Black;
+background-image: linear-gradient(90deg, #fcf6bd 48.08%, #ff99c8 48.08%, #ff99c8 50%, #fcf6bd 50%, #fcf6bd 98.08%, #ff99c8 98.08%, #ff99c8 100%);
+background-size: 104.00px 104.00px;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+}
+
+.sortProfile{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-top: 2%;
+width: 100%;
+}
+
+.backImage{
+width: 65%;
+height: 15rem;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+display:flex;
+align-items: center;
+justify-content: center;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.zoom{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}
+
+.sortButtonBack{
+display: flex;
+position: relative;
+align-items: flex-start;
+flex-direction: column;
+justify-content: flex-end;
+width: 65%;
+}
+
+.zoomBack{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.backImageSize{
+border-radius:5px 5px 5px 5px;
+display: block;
+width:100%;
+height:100%;
+object-fit: cover;
+}
+
+.iconButtons{
+max-width: 1.5rem;
+min-width: 1.5rem;
+max-height: 1.5rem;
+min-height: 1.5rem;
+}
+
+.buttonBack{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 4rem;
+height: 2rem;
+border-radius: 10px 10px 10px 10px;
+color: $Black;
+box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+font-family: 'Noto Sans', sans-serif;
+font-size: 2vh;
+margin-top: 3%;
+transition: all .3s;
+position: relative;
+overflow: hidden;
+border: transparent;
+font-weight: bold;
+z-index: 1;
+&:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: $Pink;
+border-radius: 10px 10px 10px 10px;
+z-index: -2;
+}
+&:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: darken($Pink, 15%);
+transition: all .3s;
+border-radius: 10px 10px 10px 10px;
+z-index: -1;
+}
+&:hover {
+color: $Cream;
+cursor: url(../../components/images/pointer.png),default;
+&:before {
+width: 100%;
+}
+}
+}
+
+.container{
+display: flex;
+align-items: flex-start;
+justify-content:space-between;
+width: 65%;
+margin-top: 3%;
+flex-direction: row;
+}
+
+.sortProfilePicture{
+display: flex;
+position: relative;
+align-items: center;
+justify-content: flex-start;
+flex-direction:column;
+width: 20%;
+}
+
+.zoomProfile{
+width: 100%;
+display: flex;
+position: relative;
+align-items: center;
+justify-content: flex-start;
+}
+
+.imageProfile{
+width: 100%;
+height: 12.5rem;
+align-items: flex-start;
+justify-content: flex-start;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+margin-bottom: 10%;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sortTechnologies{
+display: flex;
+align-items: flex-start;
+width: 65%;
+justify-content: flex-start;
+flex-direction:column;
+}
+
+.zoomTechonologies{
+width: 100%;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+.boxTechonologies{
+width: 92%;
+background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
+min-height: 10rem;
+height: fit-content;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+align-items:center;
+justify-content: center;
+text-align: center;
+margin-bottom: 5%;
+padding: 3%;
+}
+
+.noBack{
+display: flex;
+align-items:center;
+justify-content: center;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
+border-radius: 5px 5px 5px 5px;
+}
+
+.titleNo{
+font-size:2vh;
+margin: 0;
+color:$Black;
+font-weight:bold;
+font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.titleTechno{
+font-size:3vh;
+margin: 0;
+margin-top: 1%;
+color:$Black;
+font-weight:bold;
+font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.separateTechno{
+display: flex;
+align-items:flex-start;
+justify-content: flex-start;
+width: 100%;
+flex-direction: row;
+}
+
+.sortSelect{
+display: flex;
+align-items: flex-start;
+justify-content:flex-start;
+width:30%;
+margin-left: 5%;
+flex-direction: column;
+}
+
+.labelTechnologies{
+font-family: 'Nanum Gothic Coding', monospace;
+font-size:2vh;
+font-weight:bold;
+color:$Black;
+margin-top: 10%;
+margin-bottom:5%;
+}
+
+.select{
+width:80%;
+height: 2rem;
+font-family: 'Nanum Gothic Coding', monospace;
+font-size:2vh;
+color:$Black;
+font-weight:bold;
+background-color:$Cream;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+padding: 1%;
+margin-bottom: 5%;
+
+}
+
+.sortMyTechnologies{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+width:60%;
+flex-direction: column;
+}
+
+.titleMyTechnologies{
+font-family: 'Nanum Gothic Coding', monospace;
+font-size:2vh;
+font-weight:bold;
+color:$Black;
+margin-top: 5%;
+margin-bottom:5%;
+}
+
+.sortListTechno{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+z-index: 2;
+}
+
+.eachTechno{
+width: 30%;
+align-items:center;
+flex-direction: row;
+display: flex;
+justify-content: center;
+background-color:$Cream;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+margin: 2%;
+padding: 2%;
+}
+
+.iconButtonsTech{
+max-width: 1.2rem;
+min-width: 1.2rem;
+max-height: 1.2rem;
+min-height: 1.2rem;
+margin-right: 5%;
+}
+
+.techno{
+width: 100%;
+margin: 0;
+font-size: 2vh;
+font-family: 'Noto Sans', sans-serif;
+color: $Black;
+font-weight: bold;
+}
+
+.sortComponents{
+width: 100%;
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+@media (max-width: 1248px) {
+
+.sortProfile{
+width: 100%;
+align-items:flex-start;
+justify-content:flex-start;
+}
+
+.backImage{
+width: 75%;
+margin-left: 5%;
+align-self: flex-start;
+align-items:flex-start;
+justify-content:flex-start;
+}
+
+.sortButtonBack{
+width: 80%;
+}
+
+.buttonBack{
+width: 8rem;
+height: 4rem;
+}
+
+.iconButtons{
+max-width: 2.5rem;
+min-width: 2.5rem;
+max-height: 2.5rem;
+min-height: 2.5rem;
+}
+
+.container{
+width: 75%;
+margin-left: 5%;
+}
+
+.sortProfilePicture{
+width: 30%;
+display: flex;
+align-items:center;
+justify-content: center;
+text-align: center;
+}
+
+.titleTechno{
+font-size:2vh;
+font-weight: bold;
+}
+
+.separateTechno{
+flex-direction: column;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0%;
+}
+
+.sortSelect{
+flex-direction: column;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0%;
+}
+
+.sortMyTechnologies{
+flex-direction: column;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0%;
+}
+
+.select{
+width: 65%;
+font-size: 2vh;
+height: 4.5rem;
+display: block;
+}
+
+.option{
+width: 2rem;
+height: 2rem;
+}
+
+.techno{
+display: flex;
+flex-direction: row;
+width: 100%;
+align-items:center;
+justify-content: center;
+text-align: center;
+}
+
+.eachTechno{
+width: 90%;
+display: flex;
+align-items:center;
+justify-content: center;
+text-align: center;
+}
+
+.iconButtonsTech{
+max-width: 3rem;
+min-width: 3rem;
+max-height: 3rem;
+min-height: 3rem;
+margin-right: 5%;
+}
+
+.sortComponents{
+width: 75%;
+margin-left: 5%;
+align-self: flex-start;
+align-items:flex-start;
+justify-content:flex-start;
+}
+
+}

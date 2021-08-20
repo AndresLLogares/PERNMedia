@@ -1,0 +1,200 @@
+$Pink:#FF99C8;
+$Cream:#FCF6BD;
+$LightBlue:#D0F4DE;
+$Blue:#A9DEF9;
+$Purple:#E4C1F9;
+$White: #FFFFFF;
+$Black: #231B1B;
+
+@font-face {
+font-family: 'Bukhari';
+src: url('../../components//fonts/bukhari/Bukhari\ Script.ttf');
+font-weight: 900;
+font-style:normal;
+font-stretch: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap');
+
+.examples{
+font-family: 'Fanwood Text', serif;
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Noto Sans', sans-serif;
+font-family:'Bukhari';
+}
+
+
+::-webkit-scrollbar {
+width: .8rem;               
+}
+
+::-webkit-scrollbar-track {
+background: $Cream;       
+border-radius: 5px 5px 5px 5px;
+border: solid .1rem $Black;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: $Pink;    
+border-radius: 5rem;
+border: solid .1rem $Black;
+}
+
+.backLand{
+width: 100%;
+min-height: 120vh;
+height: fit-content;
+background-color: $Black;
+background-image: linear-gradient(90deg, #fcf6bd 48.08%, #ff99c8 48.08%, #ff99c8 50%, #fcf6bd 50%, #fcf6bd 98.08%, #ff99c8 98.08%, #ff99c8 100%);
+background-size: 104.00px 104.00px;
+justify-items: center;
+align-items: center;
+}
+
+.boxTitle{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+background-color: transparent;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sortLand{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-top: 2%;
+width: 100%;
+}
+
+.zoom{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}
+
+.sortFirstTitle{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+width: 100%;
+margin-bottom:2%;
+}
+
+.firstTitle{
+font-family: 'Nanum Gothic Coding', monospace;
+font-size: 6vh;
+color:$Black;
+margin-right: 2%;
+font-weight: bold;
+}
+
+.secondTitle{
+font-family:'Bukhari';
+font-size: 6vh;
+color:$Pink;
+font-weight: bold;
+}
+
+.sortLogo{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+.logo{ 
+width: 12%;
+}
+
+.sortCheck{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+margin-top: 3%;
+}
+
+.sortForms{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+margin-top: 5%;
+}
+
+.footer{
+width: 100%;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+
+.footerDiv{
+width: 90%;
+display: flex;
+flex-direction: column;
+border-top: solid .5rem $Black;
+margin-top: 5%;
+align-items: center;
+text-align: center;
+justify-content: center;
+font-family: 'Noto Sans', sans-serif;
+background-color: transparent;
+font-size: 2vh;
+text-decoration: none;
+color: $Black;
+font-weight: bold;
+margin-bottom: 3%;
+}
+
+.imageLic{
+margin-top: 2%;
+margin-bottom: 2%;
+width: 100%;
+}
+
+@media (max-width: 1248px) {
+
+.boxTitle{
+flex-direction: column;
+align-items: center;
+width: 80%;
+justify-content: center;
+text-align: center;
+}
+
+.secondTitle{
+margin: 0%;
+margin-top: 1%;
+margin-bottom: 1%;
+}
+
+.firstTitle{
+margin: 0%;
+margin-top: 5%;
+margin-bottom: 1%;
+}
+
+.sortLogo{
+margin-top: 5%;
+margin-bottom:5%;
+}
+
+.logo{
+width: 30%;
+}
+
+.footerDiv{
+font-size: 1.5vh;
+}
+
+}

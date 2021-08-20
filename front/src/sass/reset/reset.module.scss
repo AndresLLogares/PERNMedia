@@ -1,0 +1,244 @@
+$Pink:#FF99C8;
+$Cream:#FCF6BD;
+$LightBlue:#D0F4DE;
+$Blue:#A9DEF9;
+$Purple:#E4C1F9;
+$White: #FFFFFF;
+$Black: #231B1B;
+
+@font-face {
+font-family: 'Bukhari';
+src: url('../../components//fonts/bukhari/Bukhari\ Script.ttf');
+font-weight: 900;
+font-style:normal;
+font-stretch: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap');
+
+.examples{
+font-family: 'Fanwood Text', serif;
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Noto Sans', sans-serif;
+font-family:'Bukhari';
+}
+
+.zoom{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+width: 100%;
+}
+
+.backReset{
+background-color: $Black;
+width: 100%;
+min-height: 100vh;
+height: fit-content;
+background-color: $Black;
+background-image: linear-gradient(90deg, #fcf6bd 48.08%, #ff99c8 48.08%, #ff99c8 50%, #fcf6bd 50%, #fcf6bd 98.08%, #ff99c8 98.08%, #ff99c8 100%);
+background-size: 104.00px 104.00px;
+justify-items: center;
+align-items: center;
+}
+
+.sortReset{
+display:flex;
+align-items:center;
+justify-items: center;
+padding-top:5%;
+width: 100%;
+}
+
+.boxReset{
+width: 50%;
+display: flex;
+align-items:center;
+justify-items: center;
+flex-direction: column;
+background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
+border-radius: 10px 10px 10px 10px;
+box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sortTitleReset{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+margin-top: 2%;
+border-radius: 10px 10px 0px 0px;
+}
+
+.resetTitle{
+font-size:7vh;
+font-weight:bold;
+font-family: 'Nanum Gothic Coding', monospace;
+margin: 0;
+margin-bottom:1%;
+}
+
+.form{
+display:flex;
+align-items: center;
+justify-content:center;
+width: 50%;
+border-radius: 10px 10px 10px 10px;
+flex-direction: column;
+text-align: center;
+margin-top: 2%;
+margin-bottom:5%;
+}
+
+.iconsForm{
+min-width: 2rem;
+max-width: 2rem;
+max-height: 2rem;
+min-height: 2rem;
+margin-right: 2%;
+}
+
+
+.iconsFormLog{
+min-width: 2rem;
+max-width: 2rem;
+max-height: 2rem;
+min-height: 2rem;
+margin-left: 2%;
+}
+
+.label{
+margin-top:4%;
+margin-bottom:4%;
+display:flex;
+align-items:center;
+width: 50%;
+justify-content: flex-start;
+flex-direction: row;
+font: size 3vh;
+font-family: 'Noto Sans', sans-serif;
+font-weight: bold;
+}
+
+.input{
+display: flex;
+width: 50%;
+margin-bottom:7%;
+height: 2rem;
+font: size 4vh;
+font-weight: bold;
+font-family: 'Noto Sans', sans-serif;
+background-color: $White;
+border: transparent;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sortButton{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+margin-top:5%;
+margin-bottom:10%;
+}
+
+.button {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 12rem;
+height: 4rem;
+border-radius: 10px 10px 10px 10px;
+color: $Black;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+font-family: 'Noto Sans', sans-serif;
+font-size: 3vh;
+transition: all .3s;
+position: relative;
+overflow: hidden;
+border: transparent;
+font-weight: bold;
+z-index: 1;
+&:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: $Pink;
+border-radius: 10px 10px 10px 10px;
+z-index: -2;
+}
+&:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: darken($Pink, 15%);
+transition: all .3s;
+border-radius: 10px 10px 10px 10px;
+z-index: -1;
+}
+&:hover {
+color: $Cream;
+cursor: url(../../components/images/pointer.png),default;
+&:before {
+width: 100%;
+}
+}
+}
+
+@media (max-width: 1248px) {
+
+.boxReset{
+width: 90%;
+}
+
+.resetTitle{
+font-size: 3vh;
+}
+
+.form{
+width: 100%;
+}
+
+.iconsForm{
+min-width: 3rem;
+max-width: 3rem;
+max-height: 3rem;
+min-height: 3rem;
+margin-right: 2%;
+}
+
+.label{
+font-size: 1.5vh;
+}
+
+.input{
+    height:3rem;
+    width: 60%;
+    font-size: 1.5vh;
+}
+
+.button{
+    width: 18rem;
+    font-size: 2vh;
+    align-items: center;
+}
+
+.iconsFormLog{
+    min-width: 3rem;
+max-width: 3rem;
+max-height: 3rem;
+min-height: 3rem;
+}
+
+}
+

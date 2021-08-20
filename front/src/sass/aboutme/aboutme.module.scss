@@ -1,0 +1,234 @@
+$Pink:#FF99C8;
+$Cream:#FCF6BD;
+$LightBlue:#D0F4DE;
+$Blue:#A9DEF9;
+$Purple:#E4C1F9;
+$White: #FFFFFF;
+$Black: #231B1B;
+
+@font-face {
+font-family: 'Bukhari';
+src: url('../../components//fonts/bukhari/Bukhari\ Script.ttf');
+font-weight: 900;
+font-style:normal;
+font-stretch: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap');
+
+.examples{
+font-family: 'Fanwood Text', serif;
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Noto Sans', sans-serif;
+font-family:'Bukhari';
+}
+
+.zoomAll{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}
+
+.zoom{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}    
+
+.backAbout{
+background-color: $Black;
+width: 100%;
+min-height: 120vh;
+height: fit-content;
+background-color: $Black;
+background-image: linear-gradient(90deg, #fcf6bd 48.08%, #ff99c8 48.08%, #ff99c8 50%, #fcf6bd 50%, #fcf6bd 98.08%, #ff99c8 98.08%, #ff99c8 100%);
+background-size: 104.00px 104.00px;
+justify-items: center;
+align-items: center;
+}
+
+.sortAbout{
+display:flex;
+align-items:center;
+justify-items: center;
+padding-top:5%;
+width: 100%;
+}
+
+.boxAbout{
+width: 65%;
+display: flex;
+align-items:center;
+justify-items: center;
+background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
+flex-direction:column;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sortTitle{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+border-radius: 10px 10px 0px 0px;
+}
+
+.title{
+font-size:7vh;
+font-weight:bold;
+font-family: 'Nanum Gothic Coding', monospace;
+margin: 0;
+margin-bottom:1%;
+margin-top:1%;
+}
+
+.sortMe{
+display:flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 90%;
+padding: 1%;
+border-radius: 10px 10px 10px 10px;
+border: solid .1rem $Black;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+background:$LightBlue;
+margin-top:2%;
+margin-bottom:2%;
+}
+
+.me{
+font-size:3vh;
+font-weight:bold;
+font-family: 'Nanum Gothic Coding', monospace;
+margin: 0;
+}
+
+.twoColumns{
+display: flex;
+flex-direction: row;
+width: 95%;
+align-items: center;
+justify-content: center;
+}
+
+.zoomlLinks{
+width: 40%;
+}
+
+.sortLinks{
+display: flex;
+z-index: 2;
+align-items: flex-start;
+width: 100%;
+background-color: $LightBlue;
+margin-bottom: 5%;
+border-radius:10px 10px 10px 10px;
+border: solid .1rem $Black;
+flex-direction: column;
+justify-content: center;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.eachLink{
+display: flex;
+align-items: flex-start;
+margin-left: 8%;
+justify-content: center;
+cursor: url(../../components/images/pointer.png), pointer;
+&:hover{
+cursor: url(../../components/images/pointer.png), pointer;
+}
+}
+
+.links{
+width: 100%;
+padding:3%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: $Black;
+font-family: 'Nanum Gothic Coding', monospace;
+font-size: 3vh;
+cursor: url(../../components/images/pointer.png), pointer;
+&:hover{
+cursor: url(../../components/images/pointer.png), pointer;
+box-shadow:
+1px 1px $Black,
+2px 2px $Black,
+3px 3px $Black,
+4px 4px $Black,
+5px 5px $Black,
+6px 6px $Black;
+transform: translateX(-3px);
+transition: .5s ease;
+transition-duration: 1s;
+}
+}
+
+.iconLinks{
+color: $Black;
+min-width: 3rem;
+max-width: 3rem;
+max-height: 3rem;
+min-height: 3rem;
+margin-right: 3%;
+}
+
+.sortImage{
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 2;
+width: 50%;
+}
+
+.Image{
+width: 50%;
+}
+
+@media (max-width: 1248px) {
+
+.sortAbout{
+justify-content: flex-start;
+align-items:flex-start;
+}
+
+.zoomAll{
+justify-content: flex-start;
+align-items:flex-start;
+}
+
+.boxAbout{
+margin-left: 5%;
+width: 75%;
+}
+
+.title{
+font-size: 3vh;
+margin-top: 2%;
+margin-bottom:2%;
+}
+
+.me{
+font-size: 2vh;
+}
+
+.twoColumns{
+flex-direction: column-reverse;
+}
+
+.zoomlLinks{
+width: 90%;
+}
+
+.links{
+    font-size: 2vh;
+}
+
+}

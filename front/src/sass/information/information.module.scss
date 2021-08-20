@@ -1,0 +1,739 @@
+$Pink:#FF99C8;
+$Cream:#FCF6BD;
+$LightBlue:#D0F4DE;
+$Blue:#A9DEF9;
+$Purple:#E4C1F9;
+$White: #FFFFFF;
+$Black: #231B1B;
+
+@font-face {
+font-family: 'Bukhari';
+src: url('../../components//fonts/bukhari/Bukhari\ Script.ttf');
+font-weight: 900;
+font-style:normal;
+font-stretch: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap');
+
+.examples{
+font-family: 'Fanwood Text', serif;
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Noto Sans', sans-serif;
+font-family:'Bukhari';
+}
+
+.boxInformation{
+display:flex;
+width: 60%;
+padding: 2%;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+min-height: 10rem;
+max-height: fit-content;
+background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
+margin-bottom: 5%;
+align-items: center;
+flex-direction:column;
+justify-content: flex-start;
+}
+
+.sortTitle{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content:center;
+text-align: center;
+}
+
+.titleInfo{
+width: 100%;
+font-size:3vh;
+margin: 0;
+color:$Black;
+font-weight:bold;
+font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.twoColumns{
+display: flex;
+width: 100%;
+margin-top: 3%;
+flex-direction: row;
+}
+
+.firstColumn{
+width: 50%;
+display: flex;
+align-items: flex-start;
+justify-content:flex-start;
+flex-direction: column;
+}
+
+.secondColumn{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.eachInfo{
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+margin: 0;
+padding: 2%;
+width: 100%;
+margin-top:3%;
+background-color: $Cream;
+margin-bottom:3%;
+font-size: 2vh;
+font-family: 'Noto Sans', sans-serif;
+color: $Black;
+font-weight: bold;
+}
+
+.select{
+width:50%;
+height: 2rem;
+font-family: 'Nanum Gothic Coding', monospace;
+font-size:2vh;
+color:$Black;
+font-weight:bold;
+background-color:$Cream;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+padding: 1%;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+.selectNone{
+width:50%;
+height: 2rem;
+font-family: 'Nanum Gothic Coding', monospace;
+font-size:2vh;
+color:$Black;
+font-weight:bold;
+background-color:$Cream;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+padding: 1%;
+margin-top: 5%;
+opacity: 0.5;
+margin-bottom: 5%;
+}
+
+.buttonBook{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 7rem;
+height: 4rem;
+margin-bottom: 5%;
+border-radius: 10px 10px 10px 10px;
+color: $Black;
+box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+font-family: 'Noto Sans', sans-serif;
+font-size: 2vh;
+margin-top: 1%;
+transition: all .3s;
+position: relative;
+overflow: hidden;
+border: transparent;
+font-weight: bold;
+z-index: 1;
+&:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: $Pink;
+border-radius: 10px 10px 10px 10px;
+z-index: -2;
+}
+&:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: darken($Pink, 15%);
+transition: all .3s;
+border-radius: 10px 10px 10px 10px;
+z-index: -1;
+}
+&:hover {
+color: $Cream;
+cursor: url(../../components/images/pointer.png),default;
+&:before {
+width: 100%;
+}
+}
+}
+
+.buttonBookPop{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 7rem;
+height: 4rem;
+margin-bottom: 5%;
+border-radius: 10px 10px 10px 10px;
+color: $Black;
+box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+font-family: 'Noto Sans', sans-serif;
+font-size: 2vh;
+margin-top: 1%;
+transition: all .3s;
+position: relative;
+overflow: hidden;
+border: transparent;
+font-weight: bold;
+z-index: 1;
+&:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: $Pink;
+border-radius: 10px 10px 10px 10px;
+z-index: -2;
+}
+&:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: darken($Pink, 15%);
+transition: all .3s;
+border-radius: 10px 10px 10px 10px;
+z-index: -1;
+}
+&:hover {
+color: $Cream;
+cursor: url(../../components/images/pointer.png),default;
+&:before {
+width: 100%;
+}
+}
+}
+
+.buttonBack{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 4rem;
+min-height: 2rem;
+border-radius: 10px 10px 10px 10px;
+color: $Black;
+box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+font-family: 'Noto Sans', sans-serif;
+font-size: 2vh;
+margin-top: 1%;
+transition: all .3s;
+position: relative;
+overflow: hidden;
+border: transparent;
+font-weight: bold;
+z-index: 1;
+&:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: $Pink;
+z-index: -2;
+}
+&:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: darken($Pink, 15%);
+transition: all .3s;
+border-radius: 10px 10px 10px 10px;
+z-index: -1;
+}
+&:hover {
+color: $Cream;
+cursor: url(../../components/images/pointer.png),default;
+&:before {
+width: 100%;
+}
+}
+}
+
+.containerFlag{
+display: flex;
+margin-top: 5%;
+align-items:center;
+justify-content: center;
+width: 50%;
+height: 5rem;
+border: solid .2rem $Black;
+border-radius: 10px 10px 10px 10px;
+color: $Black;
+box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+margin-bottom: 5%;
+}
+
+.flag{
+display: block;
+width:100%;
+height:100%;
+object-fit: cover;
+border-radius: 5px 5px 5px 5px;
+}
+
+.iconBook{
+max-width: 2.5rem;
+min-width: 2.5rem;
+max-height: 2.5rem;
+min-height: 2.5rem;
+}
+
+.iconButtons{
+max-width: 1.5rem;
+min-width: 1.5rem;
+max-height: 1.5rem;
+min-height: 1.5rem;
+}
+
+.popUp{
+position: fixed;
+bottom: 2%;
+right: 10%;
+width: 70%;
+min-height: 10rem;
+z-index: 51;
+align-items: center;
+justify-content: center;
+height: fit-content;
+border: solid .2rem $Black;
+background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
+border-radius: 10px 10px 10px 10px;
+box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.popUpDelete{
+position: absolute;
+top: 85%;
+right: 15%;
+width: 70%;
+min-height: 10rem;
+z-index: 51;
+align-items: center;
+justify-content: center;
+height: fit-content;
+border: solid .2rem $Black;
+background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
+border-radius: 10px 10px 10px 10px;
+box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.buttonX{ 
+display: flex;
+width: 100%;
+margin-right: 3%;
+margin-top: 1%;
+justify-content: flex-end;
+}
+
+.buttonXList{ 
+display: flex;
+width: 100%;
+margin-bottom: 2%;
+margin-right: 3%;
+margin-top: 1%;
+align-self: flex-end;
+justify-content: flex-end;
+}
+
+.form{
+display:flex;
+align-items: center;
+justify-content:center;
+width: 100%;
+margin-top: 2%;
+flex-direction: column;
+text-align: center;
+}
+
+.iconsForm{
+min-width: 2rem;
+max-width: 2rem;
+max-height: 2rem;
+min-height: 2rem;
+margin-right: 2%;
+}    
+
+.separateLabels{
+display:flex;
+flex-direction:row;
+width: 100%;
+align-items: center;
+justify-content:center;
+}
+
+.eachLabel{
+display:flex;
+width: 60%;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.sortButtonFile{
+display:flex;
+align-items: flex-start;
+justify-content: flex-start;
+width: 60%;
+}
+
+.label{
+margin-top:4%;
+margin-bottom:1%;
+display:flex;
+align-items:center;
+width: 60%;
+max-width: 5rem;
+justify-content: center;
+flex-direction: row;
+font: size 3vh;
+font-family: 'Noto Sans', sans-serif;
+font-weight: bold;
+}
+
+.input{
+display: flex;
+width: 30%;
+margin-bottom:3%;
+height: 2rem;
+font: size 4vh;
+font-weight: bold;
+font-family: 'Noto Sans', sans-serif;
+background-color: $White;
+border: transparent;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.inputURL{
+display: flex;
+width: 85%;
+margin-bottom:10%;
+height: 2rem;
+font: size 4vh;
+font-weight: bold;
+font-family: 'Noto Sans', sans-serif;
+background-color: $White;
+border: transparent;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.imageDiv{
+width: 100%;
+}
+
+.imageFile{
+display: block;
+width:100%;
+height:100%;
+object-fit: cover;
+border-radius: 5px 5px 5px 5px;
+}
+
+.sortFile{
+width: 50%;
+height: 10rem;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+border: solid .2rem $Black;
+flex-direction: column;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sortFileUSer{
+width: 80%;
+height: 10rem;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+border: solid .2rem $Black;
+flex-direction: column;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+margin-bottom:5%;
+}
+
+.zoom{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}
+
+.zoomPopUp{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+z-index: 51;
+}
+
+.zoomWidht{
+width: 100%;
+display: flex;
+align-items: flex-start;
+justify-content:flex-start;
+flex-direction: column;
+}
+
+.zoomWidthSecond{
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.containerSave{
+display:flex;
+align-items: center;
+justify-content: flex-start;
+width: 100%;
+margin-top: 5%;
+}
+
+.containerOthers{
+display:flex;
+width: 100%;
+align-items: center;
+justify-content:center;
+flex-direction: column;
+}
+
+.sortOthers{
+display:flex;
+width: 100%;
+align-items: center;
+justify-content:center;
+margin-bottom: 5%;
+flex-direction: column;
+border: solid .2rem $Black;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.divUrl{
+word-wrap: break-word;
+flex-wrap: wrap;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+.eachInfoOthers{
+width: 70%;
+display: flex;
+align-items: center;
+background-color:$Cream;
+overflow: hidden;
+justify-content: center;
+border-radius:10px 10px 10px 10px;
+border: solid .2rem $Black;
+box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+margin: 0;
+padding: 2%;
+margin-top:2%;
+margin-bottom:2%;
+font-size: 2vh;
+font-family: 'Noto Sans', sans-serif;
+color: $Black;
+font-weight: bold;
+}
+
+.sortButtonsPopUp{
+display:flex;
+width: 80%;
+margin-bottom: 3%;
+align-items:center;
+flex-direction: row;
+justify-content:space-between;
+}
+
+@media (max-width: 1248px) {
+
+.boxInformation{
+width: 98%;
+}
+
+.titleInfo{
+font-size: 2.5vh;
+}
+
+.twoColumns{
+display: flex;
+align-items:center;
+justify-content: center;
+width: 100%;
+flex-direction: column;   
+}
+
+.zoomWidht{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content:center;
+flex-direction: column;
+}
+
+.selectNone{
+width: 80%;
+font-size: 2vh;
+height: 4.5rem;
+display: block;
+}
+
+.select{
+width: 80%;
+font-size: 2vh;
+height: 4.5rem;
+display: block;
+}
+
+.firstColumn{
+width: 80%;
+display: flex;
+align-items: center;
+justify-content:center;
+flex-direction: column;
+}
+
+.containerFlag{
+width: 80%;
+height:10rem;
+}
+
+.containerSave{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content:center;
+}
+
+.popUp{
+width: 80%;
+height: fit-content;
+bottom: 10%;
+}
+
+.separateLabels{
+display: flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+width: 100%;
+}
+
+.eachLabel{
+width: 90%;
+}
+
+.label{
+width: 100%;
+font-size: 2.5vh;
+}
+
+.iconsForm{
+min-width: 3rem;
+max-width: 3rem;
+max-height: 3rem;
+min-height: 3rem;
+margin-right: 5%;
+}
+
+.buttonBack{
+width: 6rem;
+height: 4rem;
+}
+
+.iconButtons{
+min-width: 2.5rem;
+max-width: 2.5rem;
+max-height: 2.5rem;
+min-height: 2.5rem;
+}
+
+.input{
+width: 70%;
+height: 4rem;
+font-size: 2vh;
+}
+
+.sortButtonFile{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.sortFile{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 90%;
+margin-bottom: 3%;
+}
+
+.inputURL{
+width: 90%;
+height: 3rem;
+font-size: 2vh;
+}
+
+.popUpDelete{
+width: 90%;
+right:5%;
+top: 110%;
+}
+
+
+.eachInfoOthers{
+width: 90%;
+font-size: 1.5vh;
+}
+
+.sortFile{
+height:20rem;
+}
+
+}
