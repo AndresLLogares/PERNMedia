@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux';
-import reducers from './index.js';
+import { combineReducers } from "redux";
+import reducers from "./index.js";
 
 const rootReducers = combineReducers({
-    pink: reducers
-})
+  pink: reducers,
+});
 
 export default rootReducers;

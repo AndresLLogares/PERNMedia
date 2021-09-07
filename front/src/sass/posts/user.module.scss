@@ -1,557 +1,566 @@
-$Pink:#FF99C8;
-$Cream:#FCF6BD;
-$LightBlue:#D0F4DE;
-$Blue:#A9DEF9;
-$Purple:#E4C1F9;
-$White: #FFFFFF;
-$Black: #231B1B;
+$Pink: #ff99c8;
+$Cream: #fcf6bd;
+$LightBlue: #d0f4de;
+$Blue: #a9def9;
+$Purple: #e4c1f9;
+$White: #ffffff;
+$Black: #231b1b;
 
 @font-face {
-font-family: 'Bukhari';
-src: url('../../components//fonts/bukhari/Bukhari\ Script.ttf');
-font-weight: 900;
-font-style:normal;
-font-stretch: normal;
+  font-family: "Bukhari";
+  src: url("../../components//fonts/bukhari/Bukhari\ Script.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap");
 
-.examples{
-font-family: 'Fanwood Text', serif;
-font-family: 'Nanum Gothic Coding', monospace;
-font-family: 'Noto Sans', sans-serif;
-font-family:'Bukhari';
-}
-
-.zoom{
-display:flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
+.examples {
+  font-family: "Fanwood Text", serif;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Bukhari";
 }
 
-.boxPosts{
-display:flex;
-width: 65%;
-height: fit-content;
-margin-bottom: 5%;
-align-items: center;
-flex-direction:column;
-justify-content: flex-start;
+.zoom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.sortPosts{
-display:flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-width: 100%;
+.boxPosts {
+  display: flex;
+  width: 65%;
+  height: fit-content;
+  margin-bottom: 5%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.eachPost{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 98%;
-margin-top: 3%;
-margin-bottom:3%;
-flex-direction: column;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-border-radius: 10px 10px 10px 10px;
-border: solid .2rem $Black;
-background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
+.sortPosts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
-.titlePost{
-font-size:  5vh;
-font-family: 'Noto Sans', sans-serif;
-font-weight: bold;
-color: $Black;
-margin-top: 2%;
-margin-bottom:2%;
+.eachPost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  flex-direction: column;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 10px 10px;
+  background-image: linear-gradient(
+    to right top,
+    #d0f4de,
+    #bff0e4,
+    #b1ecec,
+    #a9e6f3,
+    #a9def9
+  );
 }
 
-.imagePost{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 70%;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-border: solid .2rem $Black;
-border-radius: 10px 10px 10px 10px;
+.titlePost {
+  font-size: 5vh;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: $Black;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-.image{
-display: block;
-width:100%;
-height:100%;
-object-fit: cover;
-border-radius: 5px 5px 5px 5px;
+.imagePost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 10px 10px;
 }
 
-.sortDescription{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 70%;
-background-color: $Cream;
-margin-top:3%;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-border: solid .2rem $Black;
-border-radius: 10px 10px 10px 10px;
-margin-bottom:2%;
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 5px 5px;
 }
 
-.sortComment{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-
-margin-bottom:2%;
+.sortDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  background-color: $Cream;
+  margin-top: 3%;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 2%;
 }
 
-.description{
-font-size:  2vh;
-font-family: 'Noto Sans', sans-serif;
-font-weight: bold;
-color: $Black;
+.sortComment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  margin-bottom: 2%;
 }
 
-.sortLikes{
-display:flex;
-align-items: center;
-justify-content: flex-start;
-width: 70%;
-margin-top: 1%;
-margin-bottom:5%;
+.description {
+  font-size: 2vh;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: $Black;
 }
 
-.buttonXList{ 
-display: flex;
-width: 100%;
-margin-bottom: 1%;
-margin-right: 3%;
-margin-top: 1%;
-align-self: flex-end;
-justify-content: flex-end;
+.sortLikes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+  margin-top: 1%;
+  margin-bottom: 5%;
 }
 
-.buttonComment{
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 80%;
-min-height: 2rem;
-border-radius: 10px 10px 10px 10px;
-color: $Black;
-box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-font-family: 'Noto Sans', sans-serif;
-font-size: 2vh;
-margin-top: 1%;
-transition: all .3s;
-position: relative;
-overflow: hidden;
-border: transparent;
-font-weight: bold;
-z-index: 1;
-&:after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: $Pink;
-border-radius: 10px 10px 10px 10px;
-z-index: -2;
-}
-&:before {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0%;
-height: 100%;
-background-color: darken($Pink, 15%);
-transition: all .3s;
-border-radius: 10px 10px 10px 10px;
-z-index: -1;
-}
-&:hover {
-color: $Cream;
-cursor: url(../../components/images/pointer.png),default;
-&:before {
-width: 100%;
-}
-}
+.buttonXList {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1%;
+  margin-right: 3%;
+  margin-top: 1%;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
 
-.buttonCOmment{
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 7rem;
-min-height: 2rem;
-border-radius: 10px 10px 10px 10px;
-color: $Black;
-box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-font-family: 'Noto Sans', sans-serif;
-font-size: 2vh;
-margin-top: 1%;
-transition: all .3s;
-position: relative;
-overflow: hidden;
-border: transparent;
-font-weight: bold;
-z-index: 1;
-&:after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: $Pink;
-border-radius: 10px 10px 10px 10px;
-z-index: -2;
-}
-&:before {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0%;
-height: 100%;
-background-color: darken($Pink, 15%);
-transition: all .3s;
-border-radius: 10px 10px 10px 10px;
-z-index: -1;
-}
-&:hover {
-color: $Cream;
-cursor: url(../../components/images/pointer.png),default;
-&:before {
-width: 100%;
-}
-}
-}
-
-.buttonBack{
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 4rem;
-margin-right: 2%;
-min-height: 2rem;
-border-radius: 10px 10px 10px 10px;
-color: $Black;
-box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-font-family: 'Noto Sans', sans-serif;
-font-size: 2vh;
-margin-top: 1%;
-transition: all .3s;
-position: relative;
-overflow: hidden;
-border: transparent;
-font-weight: bold;
-z-index: 1;
-&:after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: $Pink;
-border-radius: 10px 10px 10px 10px;
-z-index: -2;
-}
-&:before {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0%;
-height: 100%;
-background-color: darken($Pink, 15%);
-transition: all .3s;
-border-radius: 10px 10px 10px 10px;
-z-index: -1;
-}
-&:hover {
-color: $Cream;
-cursor: url(../../components/images/pointer.png),default;
-&:before {
-width: 100%;
-}
-}
+.buttonComment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  min-height: 2rem;
+  border-radius: 10px 10px 10px 10px;
+  color: $Black;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2vh;
+  margin-top: 1%;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: transparent;
+  font-weight: bold;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $Pink;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($Pink, 15%);
+    transition: all 0.3s;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -1;
+  }
+  &:hover {
+    color: $Cream;
+    cursor: url(../../components/images/pointer.png), default;
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
-.iconButtons{
-max-width: 1.5rem;
-min-width: 1.5rem;
-max-height: 1.5rem;
-min-height: 1.5rem;
+.buttonCOmment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 7rem;
+  min-height: 2rem;
+  border-radius: 10px 10px 10px 10px;
+  color: $Black;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2vh;
+  margin-top: 1%;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: transparent;
+  font-weight: bold;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $Pink;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($Pink, 15%);
+    transition: all 0.3s;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -1;
+  }
+  &:hover {
+    color: $Cream;
+    cursor: url(../../components/images/pointer.png), default;
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
-.popUpDelete{
-position: fixed;
-bottom: 25%;
-right: 10%;
-z-index: 3;
-width: 70%;
-min-height: 10rem;
-z-index: 10;
-align-items: center;
-justify-content: center;
-height: fit-content;
-border: solid .2rem $Black;
-background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
-border-radius: 10px 10px 10px 10px;
-box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+.buttonBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 4rem;
+  margin-right: 2%;
+  min-height: 2rem;
+  border-radius: 10px 10px 10px 10px;
+  color: $Black;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2vh;
+  margin-top: 1%;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: transparent;
+  font-weight: bold;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $Pink;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($Pink, 15%);
+    transition: all 0.3s;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -1;
+  }
+  &:hover {
+    color: $Cream;
+    cursor: url(../../components/images/pointer.png), default;
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
-.question{
-width: 70%;
-display: flex;
-align-items: center;
-background-color:$Cream;
-overflow: hidden;
-justify-content: center;
-border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
-margin: 0;
-padding: 2%;
-margin-top:2%;
-margin-bottom:2%;
-font-size: 2vh;
-font-family: 'Noto Sans', sans-serif;
-color: $Black;
-font-weight: bold;
+.iconButtons {
+  max-width: 1.5rem;
+  min-width: 1.5rem;
+  max-height: 1.5rem;
+  min-height: 1.5rem;
 }
 
-.sortButtonsPopUp{
-display:flex;
-width: 80%;
-margin-bottom: 3%;
-align-items:center;
-flex-direction: row;
-justify-content:space-between;
+.popUpDelete {
+  position: fixed;
+  bottom: 25%;
+  right: 10%;
+  z-index: 3;
+  width: 70%;
+  min-height: 10rem;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  border: solid 0.2rem $Black;
+  background-image: linear-gradient(
+    to right top,
+    #d0f4de,
+    #bff0e4,
+    #b1ecec,
+    #a9e6f3,
+    #a9def9
+  );
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.form{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-flex-direction: column;
-margin-bottom: 3%;
-}    
-
-.label{
-margin-bottom:3%;
-display:flex;
-align-items: flex-start;
-width: 100%;
-justify-content: center;
-flex-direction: row;
-font: size 3vh;
-font-family: 'Noto Sans', sans-serif;
-font-weight: bold;
+.question {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  background-color: $Cream;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 0.2rem $Black;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 2vh;
+  font-family: "Noto Sans", sans-serif;
+  color: $Black;
+  font-weight: bold;
 }
 
-.textarea{
-display: flex;
-width: 70%;
-margin-bottom:3%;
-height: 7rem;
-font: size 3vh;
-resize: none;
-font-weight: bold;
-font-family: 'Noto Sans', sans-serif;
-background-color: $White;
-border: transparent;
-border-radius: 10px 10px 10px 10px;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+.sortButtonsPopUp {
+  display: flex;
+  width: 80%;
+  margin-bottom: 3%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.sortComment{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-flex-direction: column;
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 3%;
 }
 
-.eachComment{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 70%;
-flex-direction: column;
-border: solid .2rem $Black;
-border-radius: 10px 10px 10px 10px;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-background-color: $Cream;
-margin-bottom:2%;
+.label {
+  margin-bottom: 3%;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  font: size 3vh;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
 }
 
-.sortName{
-display:flex;
-width: 100%;
-display:flex;
-align-items: flex-start;
-flex-direction: column;
-width: 100%;
-margin-left: 3%;
-justify-content: flex-start;
+.textarea {
+  display: flex;
+  width: 70%;
+  margin-bottom: 3%;
+  height: 7rem;
+  font: size 3vh;
+  resize: none;
+  font-weight: bold;
+  font-family: "Noto Sans", sans-serif;
+  background-color: $White;
+  border: transparent;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.sortUpCOmment{
-display:flex;
-align-items: flex-start;
-flex-direction: row;
-width: 100%;
-justify-content: flex-start;
-border-bottom: double .3rem $Black;
+.sortComment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
 }
 
-.name{
-font-family: 'Nanum Gothic Coding', monospace;
-font-size: 2vh;
-font-weight: bold;
-color: $Black;
-margin: 0;
-margin-top: 1%;
-margin-bottom:1%;
-margin-left: 2%;
+.eachComment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  flex-direction: column;
+  border: solid 0.2rem $Black;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: $Cream;
+  margin-bottom: 2%;
 }
 
-.comment{
-font-family: 'Noto Sans', sans-serif;
-font-size: 2vh;
-font-weight: bold;
-margin:0;
-color: $Black;
-margin-top: 2%;
-margin-bottom: 2%;
+.sortName {
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 3%;
+  justify-content: flex-start;
+}
+
+.sortUpCOmment {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  border-bottom: double 0.3rem $Black;
+}
+
+.name {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 2vh;
+  font-weight: bold;
+  color: $Black;
+  margin: 0;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+}
+
+.comment {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2vh;
+  font-weight: bold;
+  margin: 0;
+  color: $Black;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 @media (max-width: 1248px) {
+  .boxPosts {
+    width: 103%;
+    margin-bottom: 10%;
+  }
 
-.boxPosts{
-width: 103%;
-margin-bottom: 10%;
-}
+  .eachPost {
+    width: 100%;
+  }
 
-.eachPost{
-width: 100%;
-}
+  .buttonBack {
+    width: 6rem;
+    height: 4rem;
+  }
 
-.buttonBack{
-width: 6rem;
-height: 4rem;
-}
-
-.sortLikes{
+  .sortLikes {
     width: 80%;
-}
+  }
 
-.iconButtons{
-min-width: 2.5rem;
-max-width: 2.5rem;
-max-height: 2.5rem;
-min-height: 2.5rem;
-}
+  .iconButtons {
+    min-width: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    min-height: 2.5rem;
+  }
 
-.titlePost{
-font-size: 3vh;
-}
+  .titlePost {
+    font-size: 3vh;
+  }
 
-.buttonComment{
-height: 4rem;
-}
+  .buttonComment {
+    height: 4rem;
+  }
 
-.popUpDelete{
-width: 90%;
-right:5%;
-bottom:30%;
-}
+  .popUpDelete {
+    width: 90%;
+    right: 5%;
+    bottom: 30%;
+  }
 
-.popUp{
-width: 80%;
-height: fit-content;
-bottom: 10%;
-}
+  .popUp {
+    width: 80%;
+    height: fit-content;
+    bottom: 10%;
+  }
 
-.question{
-width: 90%;
-font-size: 1.5vh;
-}
+  .question {
+    width: 90%;
+    font-size: 1.5vh;
+  }
 
-.label{
-display: flex;
-align-items:center;
-justify-content: center;
-text-align:center;
-width: 100%;
-font-size: 2.5vh;
-}
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5vh;
+  }
 
-.textarea{
-height: 20rem;
-font-size: 1.5vh;
-}
+  .textarea {
+    height: 20rem;
+    font-size: 1.5vh;
+  }
 
-.sortUpCOmment{
-display:flex;
-flex-direction:column;
-}
+  .sortUpCOmment {
+    display: flex;
+    flex-direction: column;
+  }
 
-.name{
-font-size: 1.5vh;
-}
+  .name {
+    font-size: 1.5vh;
+  }
 
-.imagePost{
-width: 80%;
-}
+  .imagePost {
+    width: 80%;
+  }
 
-.sortDescription{
-width: 80%;
-display: flex;
-align-items:flex-start;
-justify-content: flex-start;
-}
+  .sortDescription {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
-.description{
-font-size: 1.5vh;
-margin:0%;
-margin-bottom:1%;
-margin-top:1%;
-margin-left: 1%;
-}
+  .description {
+    font-size: 1.5vh;
+    margin: 0%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 1%;
+  }
 
-.sortComment{
-width: 100%;
-}
+  .sortComment {
+    width: 100%;
+  }
 
-.eachComment{
-width: 80%;
-}
+  .eachComment {
+    width: 80%;
+  }
 
-.buttonCOmment{
-width: 40%;
-}
+  .buttonCOmment {
+    width: 40%;
+  }
 
-.comment{
-font-weight: bold;
-font-size: 1.5vh;
-}
-
+  .comment {
+    font-weight: bold;
+    font-size: 1.5vh;
+  }
 }

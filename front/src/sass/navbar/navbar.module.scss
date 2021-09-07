@@ -1,420 +1,425 @@
-$Pink:#FF99C8;
-$Cream:#FCF6BD;
-$LightBlue:#D0F4DE;
-$Blue:#A9DEF9;
-$Purple:#E4C1F9;
-$White: #FFFFFF;
-$Black: #231B1B;
+$Pink: #ff99c8;
+$Cream: #fcf6bd;
+$LightBlue: #d0f4de;
+$Blue: #a9def9;
+$Purple: #e4c1f9;
+$White: #ffffff;
+$Black: #231b1b;
 
 @font-face {
-font-family: 'Bukhari';
-src: url('../../components//fonts/bukhari/Bukhari\ Script.ttf');
-font-weight: 900;
-font-style:normal;
-font-stretch: normal;
+  font-family: "Bukhari";
+  src: url("../../components//fonts/bukhari/Bukhari\ Script.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap");
 
-.examples{
-font-family: 'Fanwood Text', serif;
-font-family: 'Nanum Gothic Coding', monospace;
-font-family: 'Noto Sans', sans-serif;
-font-family:'Bukhari';
-}
-
-.sortButton{
-display:flex;
-position: fixed;
-top: 2%;
-right: 21%;
-z-index:5;
+.examples {
+  font-family: "Fanwood Text", serif;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Bukhari";
 }
 
-.sortButtonOthers{
-display:flex;
-position: fixed;
-top: 2%;
-right: 3%;
-z-index:5;
+.sortButton {
+  display: flex;
+  position: fixed;
+  top: 2%;
+  right: 21%;
+  z-index: 5;
 }
 
-.icons{
-max-width: 2rem;
-min-width: 2rem;
-max-height: 2rem;
-min-height: 2rem;
+.sortButtonOthers {
+  display: flex;
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  z-index: 5;
 }
 
-.iconsLinks{
-max-width: 2rem;
-min-width: 2rem;
-max-height: 2rem;
-min-height: 2rem;
-margin-right: 3%;
+.icons {
+  max-width: 2rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
 }
 
-.button{
-display: inline-block;
-width: 5rem;
-height: 3rem;
-border-radius: 10px 10px 10px 10px;
-color: $Black;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-font-family: 'Noto Sans', sans-serif;
-font-size: 3vh;
-transition: all .3s;
-position: relative;
-overflow: hidden;
-border: transparent;
-font-weight: bold;
-z-index: 5;
-&:after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: $Pink;
-border-radius: 10px 10px 10px 10px;
-z-index: -2;
-}
-&:before {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0%;
-height: 100%;
-background-color: darken($Pink, 15%);
-transition: all .3s;
-border-radius: 10px 10px 10px 10px;
-z-index: -1;
-}
-&:hover {
-color: $Cream;
-cursor: url(../../components/images/pointer.png),default;
-&:before {
-width: 100%;
-}
-}
+.iconsLinks {
+  max-width: 2rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
+  margin-right: 3%;
 }
 
-.buttonLinks{
-display: inline-block;
-width: 10rem;
-height: 3rem;
-border-radius: 10px 10px 10px 10px;
-color: $Black;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-font-family: 'Noto Sans', sans-serif;
-font-size: 2.5vh;
-transition: all .3s;
-position: relative;
-overflow: hidden;
-border: transparent;
-font-weight: bold;
-z-index: 1;
-&:after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: $Pink;
-border-radius: 10px 10px 10px 10px;
-z-index: -2;
-}
-&:before {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0%;
-height: 100%;
-background-color: darken($Pink, 15%);
-transition: all .3s;
-border-radius: 10px 10px 10px 10px;
-z-index: -1;
-}
-&:hover {
-color: $Cream;
-cursor: url(../../components/images/pointer.png),default;
-&:before {
-width: 100%;
-}
-}
+.button {
+  display: inline-block;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 10px 10px 10px 10px;
+  color: $Black;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3vh;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: transparent;
+  font-weight: bold;
+  z-index: 5;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $Pink;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($Pink, 15%);
+    transition: all 0.3s;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -1;
+  }
+  &:hover {
+    color: $Cream;
+    cursor: url(../../components/images/pointer.png), default;
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
-.none{
-display:flex;
-position: fixed;
-top: 0;
-left: 0;
-width: 15%;
-height: 100%;
-background-color: $LightBlue;
-align-items: flex-start;
-border-right: solid .2rem $Black;
-justify-content:center;
-animation-duration: 1s;
-animation-name: bounceOutLeft;
-z-index: 5;
-transform: translateX(-2000px);
+.buttonLinks {
+  display: inline-block;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px 10px 10px 10px;
+  color: $Black;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.5vh;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: transparent;
+  font-weight: bold;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $Pink;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($Pink, 15%);
+    transition: all 0.3s;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -1;
+  }
+  &:hover {
+    color: $Cream;
+    cursor: url(../../components/images/pointer.png), default;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.none {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background-color: $LightBlue;
+  align-items: flex-start;
+  border-right: solid 0.2rem $Black;
+  justify-content: center;
+  animation-duration: 1s;
+  animation-name: bounceOutLeft;
+  z-index: 5;
+  transform: translateX(-2000px);
 }
 
 @keyframes bounceOutLeft {
-0% {
-transform: translateX(0);
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
 }
-20% {
-opacity: 1;
-transform: translateX(20px);
-}
-100% {
-opacity: 0;
-transform: translateX(-2000px);
-}
-} 
 
-.sideBar{
-display:flex;
-position: fixed;
-top: 0;
-left: 0;
-width: 15%;
-height: 100%;
-background-color: $LightBlue;
-border-right: solid .2rem $Black;
-align-items: flex-start;
-z-index: 55;
-justify-content:center;
-animation-duration: 1s;
-animation-name: bounceInLeft;
+.sideBar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background-color: $LightBlue;
+  border-right: solid 0.2rem $Black;
+  align-items: flex-start;
+  z-index: 55;
+  justify-content: center;
+  animation-duration: 1s;
+  animation-name: bounceInLeft;
 }
 
 @keyframes bounceInLeft {
-0% {
-opacity: 0;
-transform: translateX(-2000px);
-}
-60% {
-opacity: 1;
-transform: translateX(30px);
-}
-80% {
-transform: translateX(-10px);
-}
-100% {
-transform: translateX(0);
-}
-} 
-
-.zoom{
-display:flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.sortLinks{
-display:flex;
-width: 100%;
-align-items: center;
-margin-top: 5%;
-flex-direction: column;
-justify-content:center;
+.zoom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.eachLink{
-width: 100%;
-margin-top: 5%;
-margin-bottom: 5%;
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+.sortLinks {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.label{
-margin-top:4%;
-margin-bottom:4%;
-display:flex;
-align-items:center;
-width: 100%;
-justify-content: center;
-flex-direction: row;
-font: size 3vh;
-font-family: 'Noto Sans', sans-serif;
-font-weight: bold;
+.eachLink {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.input{
-display: flex;
-width: 10rem;
-height: 3rem;
-margin-bottom:5%;
-font: size 4vh;
-font-weight: bold;
-font-family: 'Noto Sans', sans-serif;
-background-color: $White;
-border: transparent;
-border-radius: 10px 10px 10px 10px;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+.label {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  font: size 3vh;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
 }
 
-.sortLogo{
-display:flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-bottom: 10%;
-width: 100%;
+.input {
+  display: flex;
+  width: 10rem;
+  height: 3rem;
+  margin-bottom: 5%;
+  font: size 4vh;
+  font-weight: bold;
+  font-family: "Noto Sans", sans-serif;
+  background-color: $White;
+  border: transparent;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.logo{
-width: 30%;
+.sortLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10%;
+  width: 100%;
 }
 
-.title{
-font-family:'Bukhari';
-font-size: 4vh;
-color:$Pink;
-margin: 0;
-font-weight: bold;
+.logo {
+  width: 30%;
 }
 
-.form{
-display:flex;
-width: 100%;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+.title {
+  font-family: "Bukhari";
+  font-size: 4vh;
+  color: $Pink;
+  margin: 0;
+  font-weight: bold;
 }
 
-.sortAutoInput{
-display:flex;
-align-items:center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
+.form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.sortAuto{  
-display: flex;
-position: absolute;
-flex-direction:column;
-align-items: center;
-justify-content: center;
-margin-top: 70%;
-z-index: 5;
-background-color: $LightBlue;
-width: 90%;
-border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
+.sortAutoInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.eachAuto{
-display:flex;
-align-items: center;
-justify-content: flex-start;
-flex-direction: row;
-text-align: center;
-width: 100%;
-border-bottom: solid .1rem $Black;
-&:hover{
-transition-duration: 1s;
-border-radius:5px 5px 5px 5px;
-background-color: $Cream;
-cursor: url(../../components/images/pointer.png),default;
-}
+.sortAuto {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 30%;
+  z-index: 5;
+  background-color: $LightBlue;
+  width: 90%;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 0.2rem $Black;
 }
 
-.imageAuto{
-border-radius:10px 10px 10px 10px;
-width: 20%;
-margin: 2%;
+.eachAuto {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  border-bottom: solid 0.1rem $Black;
+  &:hover {
+    transition-duration: 1s;
+    border-radius: 5px 5px 5px 5px;
+    background-color: $Cream;
+    cursor: url(../../components/images/pointer.png), default;
+  }
 }
 
-.noneAuto{
-display: none;
+.imageAuto {
+  border-radius: 10px 10px 10px 10px;
+  width: 20%;
+  margin: 2%;
 }
 
-.nameAuto{
-font-size: 2vh;
-font-family: 'Noto Sans', sans-serif;
-font-weight: bold;
-color: $Black;
+.noneAuto {
+  display: none;
+}
+
+.nameAuto {
+  font-size: 2vh;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: $Black;
 }
 
 @media (max-width: 1248px) {
+  .sideBar {
+    width: 100%;
+  }
 
-.sideBar{
-width: 100%;
-}
+  .nameAuto {
+    font-size: 2vh;
+  }
 
-.nameAuto{
-font-size: 2vh;
-}
+  .sortAuto {
+    top: 35%;
+    width: 60%;
+  }
 
-.sortAuto{  
-margin-top:40%;
-}
+  .eachAuto {
+    width: 100%;
+  }
 
-.none{
-width: 100%;
-}
+  .none {
+    width: 100%;
+  }
 
-.button{
-width: 8rem;
-display: flex;
-align-items: center;
-justify-content: center;
-height: 5rem;
-}
+  .button {
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+  }
 
-.icons{
-max-width: 4rem;
-min-width: 4rem;
-max-height: 4rem;
-min-height: 4rem;
-}
+  .icons {
+    max-width: 4rem;
+    min-width: 4rem;
+    max-height: 4rem;
+    min-height: 4rem;
+  }
 
-.input{
-width: 20rem;
-height: 5rem;
-font-size: 1.5vh;
-}
+  .input {
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5vh;
+  }
 
-.sortLogo{
-margin-bottom: 5%;
-}
+  .sortLogo {
+    margin-bottom: 5%;
+  }
 
-.buttonLinks{
-width: 25rem;
-height: 5rem;
-}
+  .buttonLinks {
+    width: 25rem;
+    height: 5rem;
+  }
 
-.eachLink{
-margin-top: 2.5%;
-margin-bottom: 2.5%;
-}
+  .eachLink {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
 
-.iconsLinks{
-max-width: 3rem;
-min-width: 3rem;
-max-height: 3rem;
-min-height: 3rem;
-}
+  .iconsLinks {
+    max-width: 3rem;
+    min-width: 3rem;
+    max-height: 3rem;
+    min-height: 3rem;
+  }
 
-.sortButton{
-right: 38%;
-}
+  .sortButton {
+    right: 38%;
+  }
 
-.imageAuto{
-width: 15%;
-}
+  .imageAuto {
+    width: 15%;
+  }
 }

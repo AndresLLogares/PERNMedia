@@ -1,493 +1,509 @@
-$Pink:#FF99C8;
-$Cream:#FCF6BD;
-$LightBlue:#D0F4DE;
-$Blue:#A9DEF9;
-$Purple:#E4C1F9;
-$White: #FFFFFF;
-$Black: #231B1B;
+$Pink: #ff99c8;
+$Cream: #fcf6bd;
+$LightBlue: #d0f4de;
+$Blue: #a9def9;
+$Purple: #e4c1f9;
+$White: #ffffff;
+$Black: #231b1b;
 
 @font-face {
-font-family: 'Bukhari';
-src: url('../../components//fonts/bukhari/Bukhari\ Script.ttf');
-font-weight: 900;
-font-style:normal;
-font-stretch: normal;
+  font-family: "Bukhari";
+  src: url("../../components//fonts/bukhari/Bukhari\ Script.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Nanum+Gothic+Coding&family=Noto+Sans&display=swap");
 
-.examples{
-font-family: 'Fanwood Text', serif;
-font-family: 'Nanum Gothic Coding', monospace;
-font-family: 'Noto Sans', sans-serif;
-font-family:'Bukhari';
-}
-
-.boxEducation{
-display:flex;
-width: 60%;
-padding: 2%;
-border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
-min-height: 10rem;
-max-height: fit-content;
-background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-margin-bottom: 5%;
-align-items: center;
-flex-direction:column;
-justify-content: flex-start;
+.examples {
+  font-family: "Fanwood Text", serif;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Bukhari";
 }
 
-.zoom{
-display:flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
+.boxEducation {
+  display: flex;
+  width: 60%;
+  padding: 2%;
+  border-radius: 10px 10px 10px 10px;
+  min-height: 10rem;
+  max-height: fit-content;
+  background-image: linear-gradient(
+    to right top,
+    #d0f4de,
+    #bff0e4,
+    #b1ecec,
+    #a9e6f3,
+    #a9def9
+  );
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 5%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.sortTitle{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content:center;
-text-align: center;
-flex-direction:column;
+.zoom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.titleEducation{
-width: 100%;
-font-size:3vh;
-margin: 0;
-color:$Black;
-font-weight:bold;
-font-family: 'Nanum Gothic Coding', monospace;
+.sortTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-.buttonBack{
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 4rem;
-min-height: 2rem;
-border-radius: 10px 10px 10px 10px;
-color: $Black;
-box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-font-family: 'Noto Sans', sans-serif;
-font-size: 2vh;
-margin-top: 1%;
-transition: all .3s;
-position: relative;
-overflow: hidden;
-border: transparent;
-font-weight: bold;
-z-index: 1;
-&:after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: $Pink;
-border-radius: 10px 10px 10px 10px;
-z-index: -2;
-}
-&:before {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0%;
-height: 100%;
-background-color: darken($Pink, 15%);
-transition: all .3s;
-border-radius: 10px 10px 10px 10px;
-z-index: -1;
-}
-&:hover {
-color: $Cream;
-cursor: url(../../components/images/pointer.png),default;
-&:before {
-width: 100%;
-}
-}
+.titleEducation {
+  width: 100%;
+  font-size: 3vh;
+  margin: 0;
+  color: $Black;
+  font-weight: bold;
+  font-family: "Nanum Gothic Coding", monospace;
 }
 
-.iconButtons{
-max-width: 1.5rem;
-min-width: 1.5rem;
-max-height: 1.5rem;
-min-height: 1.5rem;
+.buttonBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 4rem;
+  min-height: 2rem;
+  border-radius: 10px 10px 10px 10px;
+  color: $Black;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2vh;
+  margin-top: 1%;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: transparent;
+  font-weight: bold;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $Pink;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($Pink, 15%);
+    transition: all 0.3s;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -1;
+  }
+  &:hover {
+    color: $Cream;
+    cursor: url(../../components/images/pointer.png), default;
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
-.iconButtonsForm{
-max-width: 1.5rem;
-min-width: 1.5rem;
-max-height: 1.5rem;
-min-height: 1.5rem;
-margin-right: 5%;
+.iconButtons {
+  max-width: 1.5rem;
+  min-width: 1.5rem;
+  max-height: 1.5rem;
+  min-height: 1.5rem;
 }
 
-.iconButtonsInfo{
-max-width: 1.5rem;
-min-width: 1.5rem;
-max-height: 1.5rem;
-min-height: 1.5rem;
-margin-right: 2%;
+.iconButtonsForm {
+  max-width: 1.5rem;
+  min-width: 1.5rem;
+  max-height: 1.5rem;
+  min-height: 1.5rem;
+  margin-right: 5%;
 }
 
-.zoomWidth{
-display:flex;
-align-items: flex-end;
-flex-direction: column;
-justify-content: flex-end;
-width: 100%; 
+.iconButtonsInfo {
+  max-width: 1.5rem;
+  min-width: 1.5rem;
+  max-height: 1.5rem;
+  min-height: 1.5rem;
+  margin-right: 2%;
 }
 
-.sortEdit{
-display:flex;
-align-items: flex-end;
-flex-direction: column;
-justify-content: flex-end;
-width: 100%;
+.zoomWidth {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
 }
 
-.form{
-display:flex;
-align-items: flex-start;
-justify-content: center;
-width: 30%;
-flex-direction: column;
-margin-bottom: 3%;
+.sortEdit {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
 }
 
-.label{
-margin-top:5%;
-margin-bottom:3%;
-display:flex;
-align-items:flex-start;
-width: 100%;
-justify-content: flex-start;
-flex-direction: row;
-font: size 3vh;
-font-family: 'Noto Sans', sans-serif;
-font-weight: bold;
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 30%;
+  flex-direction: column;
+  margin-bottom: 3%;
 }
 
-.input{
-display: flex;
-width: 100%;
-margin-bottom:3%;
-height: 2rem;
-font: size 4vh;
-font-weight: bold;
-font-family: 'Noto Sans', sans-serif;
-background-color: $White;
-border: transparent;
-border-radius: 10px 10px 10px 10px;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+.label {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: row;
+  font: size 3vh;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
 }
 
-.textarea{
-display: flex;
-width: 100%;
-margin-bottom:3%;
-height: 7rem;
-font: size 4vh;
-resize: none;
-font-weight: bold;
-font-family: 'Noto Sans', sans-serif;
-background-color: $White;
-border: transparent;
-border-radius: 10px 10px 10px 10px;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+.input {
+  display: flex;
+  width: 100%;
+  margin-bottom: 3%;
+  height: 2rem;
+  font: size 4vh;
+  font-weight: bold;
+  font-family: "Noto Sans", sans-serif;
+  background-color: $White;
+  border: transparent;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.popUp{
-position: fixed;
-bottom: 2%;
-right: 10%;
-width: 70%;
-z-index: 51;
-min-height: 10rem;
-align-items: center;
-justify-content: center;
-height: fit-content;
-border: solid .2rem $Black;
-background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
-border-radius: 10px 10px 10px 10px;
-box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+.textarea {
+  display: flex;
+  width: 100%;
+  margin-bottom: 3%;
+  height: 7rem;
+  font: size 4vh;
+  resize: none;
+  font-weight: bold;
+  font-family: "Noto Sans", sans-serif;
+  background-color: $White;
+  border: transparent;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.popUpDelete{
-position: fixed;
-bottom: 25%;
-right: 10%;
-width: 70%;
-min-height: 10rem;
-z-index: 51;
-align-items: center;
-justify-content: center;
-height: fit-content;
-border: solid .2rem $Black;
-background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
-border-radius: 10px 10px 10px 10px;
-box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+.popUp {
+  position: fixed;
+  bottom: 2%;
+  right: 10%;
+  width: 70%;
+  z-index: 51;
+  min-height: 10rem;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  border: solid 0.2rem $Black;
+  background-image: linear-gradient(
+    to right top,
+    #d0f4de,
+    #bff0e4,
+    #b1ecec,
+    #a9e6f3,
+    #a9def9
+  );
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.buttonX{ 
-display: flex;
-width: 100%;
-margin-right: 3%;
-margin-top: 1%;
-justify-content: flex-end;
-z-index: 5;
+.popUpDelete {
+  position: fixed;
+  bottom: 25%;
+  right: 10%;
+  width: 70%;
+  min-height: 10rem;
+  z-index: 51;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  border: solid 0.2rem $Black;
+  background-image: linear-gradient(
+    to right top,
+    #d0f4de,
+    #bff0e4,
+    #b1ecec,
+    #a9e6f3,
+    #a9def9
+  );
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.buttonBookPop{
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 6rem;
-height: 2rem;
-margin-bottom: 2%;
-border-radius: 10px 10px 10px 10px;
-color: $Black;
-box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-font-family: 'Noto Sans', sans-serif;
-font-size: 2vh;
-margin-top: 1%;
-transition: all .3s;
-position: relative;
-overflow: hidden;
-border: transparent;
-font-weight: bold;
-z-index: 1;
-&:after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: $Pink;
-border-radius: 10px 10px 10px 10px;
-z-index: -2;
-}
-&:before {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0%;
-height: 100%;
-background-color: darken($Pink, 15%);
-transition: all .3s;
-border-radius: 10px 10px 10px 10px;
-z-index: -1;
-}
-&:hover {
-color: $Cream;
-cursor: url(../../components/images/pointer.png),default;
-&:before {
-width: 100%;
-}
-}
+.buttonX {
+  display: flex;
+  width: 100%;
+  margin-right: 3%;
+  margin-top: 1%;
+  justify-content: flex-end;
+  z-index: 5;
 }
 
-.zoomPopUp{
-display:flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
-z-index: 51;
+.buttonBookPop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 6rem;
+  height: 2rem;
+  margin-bottom: 2%;
+  border-radius: 10px 10px 10px 10px;
+  color: $Black;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2vh;
+  margin-top: 1%;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: transparent;
+  font-weight: bold;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $Pink;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($Pink, 15%);
+    transition: all 0.3s;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -1;
+  }
+  &:hover {
+    color: $Cream;
+    cursor: url(../../components/images/pointer.png), default;
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
-.containerSave{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-margin-top: 5%;
+.zoomPopUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  z-index: 51;
 }
 
-.sortEducation{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 90%;
-flex-direction:column;
+.containerSave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
 }
 
-.eachEducation{
-display:flex;
-flex-direction:column;
-margin-top: 3%;
-margin-bottom:3%;
-align-items: center;
-justify-content: center;
-width: 100%;
-border: solid .2rem $Black;
-border-radius: 10px 10px 10px 10px;
-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+.sortEducation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  flex-direction: column;
 }
 
-.infoEducation{
-border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
-margin: 0;
-padding: 2%;
-text-align:left;
-width: 80%;
-margin-top:2%;
-background-color: $Cream;
-margin-bottom:1%;
-font-size: 2vh;
-font-family: 'Noto Sans', sans-serif;
-color: $Black;
-font-weight: bold;
+.eachEducation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: solid 0.2rem $Black;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.hrInfo{
-width: 80%;
-height: .5rem;
-background-color: $Pink;
-border-radius:10px 10px 10px 10px;
-margin-bottom:2%;
-border: solid .2rem $Black;
-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+.infoEducation {
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 2%;
+  text-align: left;
+  width: 80%;
+  margin-top: 2%;
+  background-color: $Cream;
+  margin-bottom: 1%;
+  font-size: 2vh;
+  font-family: "Noto Sans", sans-serif;
+  color: $Black;
+  font-weight: bold;
 }
 
-.buttonXList{ 
-display: flex;
-width: 100%;
-margin-bottom: 2%;
-margin-right: 3%;
-margin-top: 1%;
-align-self: flex-end;
-justify-content: flex-end;
+.hrInfo {
+  width: 80%;
+  height: 0.5rem;
+  background-color: $Pink;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 2%;
+  border: solid 0.2rem $Black;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
-.question{
-width: 70%;
-display: flex;
-z-index: 5;
-align-items: center;
-background-color:$Cream;
-overflow: hidden;
-justify-content: center;
-border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
-margin: 0;
-padding: 2%;
-margin-top:2%;
-margin-bottom:2%;
-font-size: 2vh;
-font-family: 'Noto Sans', sans-serif;
-color: $Black;
-font-weight: bold;
+.buttonXList {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2%;
+  margin-right: 3%;
+  margin-top: 1%;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
 
-.sortButtonsPopUp{
-display:flex;
-width: 80%;
-z-index: 5;
-margin-bottom: 3%;
-align-items:center;
-flex-direction: row;
-justify-content:space-between;
+.question {
+  width: 70%;
+  display: flex;
+  z-index: 5;
+  align-items: center;
+  background-color: $Cream;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 2vh;
+  font-family: "Noto Sans", sans-serif;
+  color: $Black;
+  font-weight: bold;
+}
+
+.sortButtonsPopUp {
+  display: flex;
+  width: 80%;
+  z-index: 5;
+  margin-bottom: 3%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 @media (max-width: 1248px) {
+  .boxEducation {
+    width: 98%;
+  }
 
-.boxEducation{
-width: 98%;
-}
+  .form {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 
-.form{
-width: 60%;
-align-items:center;
-justify-content: center;
-display:flex;
-}
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5vh;
+  }
 
-.label{
-display: flex;
-align-items:center;
-justify-content: flex-start;
-text-align:center;
-width: 100%;
-font-size: 2.5vh;
-}
+  .iconButtonsForm {
+    min-width: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    min-height: 2.5rem;
+  }
 
-.iconButtonsForm{
-min-width: 2.5rem;
-max-width: 2.5rem;
-max-height: 2.5rem;
-min-height: 2.5rem;
-}
+  .input {
+    width: 100%;
+    height: 4rem;
+    font-size: 2vh;
+  }
 
-.input{
-width: 100%;
-height: 4rem;
-font-size: 2vh;
-}
+  .textarea {
+    height: 10rem;
+    font-size: 1.5vh;
+  }
 
-.textarea{
-height: 10rem;
-font-size: 1.5vh;
-}
+  .buttonBack {
+    width: 6rem;
+    height: 4rem;
+  }
 
-.buttonBack{
-width: 6rem;
-height: 4rem;
-}
+  .iconButtons {
+    min-width: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    min-height: 2.5rem;
+  }
 
-.iconButtons{
-min-width: 2.5rem;
-max-width: 2.5rem;
-max-height: 2.5rem;
-min-height: 2.5rem;
-}
+  .buttonBookPop {
+    width: 8rem;
+    height: 4rem;
+  }
 
-.buttonBookPop{
-width: 8rem;
-height: 4rem;
-}
+  .popUpDelete {
+    width: 90%;
+    right: 5%;
+    bottom: 30%;
+  }
 
-.popUpDelete{
-width: 90%;
-right:5%;
-bottom:30%;
-}
+  .popUp {
+    width: 80%;
+    height: fit-content;
+    bottom: 10%;
+  }
 
-.popUp{
-width: 80%;
-height: fit-content;
-bottom: 10%;
-}
+  .question {
+    width: 90%;
+    font-size: 1.5vh;
+  }
 
-.question{
-width: 90%;
-font-size: 1.5vh;
-}
+  .infoEducation {
+    font-size: 1.5vh;
+  }
 
-.infoEducation{
-font-size: 1.5vh;
-}
-
-.iconButtonsInfo{
-min-width: 2.5rem;
-max-width: 2.5rem;
-max-height: 2.5rem;
-min-height: 2.5rem;
-}
-
+  .iconButtonsInfo {
+    min-width: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    min-height: 2.5rem;
+  }
 }

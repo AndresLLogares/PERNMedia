@@ -29,7 +29,6 @@ width: 60%;
 padding: 2%;
 box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
 min-height: 10rem;
 max-height: fit-content;
 background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
@@ -81,7 +80,6 @@ flex-direction: column;
 
 .eachInfo{
 border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
 box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
 margin: 0;
 padding: 2%;
@@ -101,10 +99,10 @@ height: 2rem;
 font-family: 'Nanum Gothic Coding', monospace;
 font-size:2vh;
 color:$Black;
+border:transparent;
 font-weight:bold;
 background-color:$Cream;
 border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
 box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 padding: 1%;
 margin-top: 5%;
@@ -117,10 +115,10 @@ height: 2rem;
 font-family: 'Nanum Gothic Coding', monospace;
 font-size:2vh;
 color:$Black;
+border:transparent;
 font-weight:bold;
 background-color:$Cream;
 border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
 box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 padding: 1%;
 margin-top: 5%;
@@ -289,7 +287,6 @@ align-items:center;
 justify-content: center;
 width: 50%;
 height: 5rem;
-border: solid .2rem $Black;
 border-radius: 10px 10px 10px 10px;
 color: $Black;
 box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
@@ -470,7 +467,6 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
-border: solid .2rem $Black;
 flex-direction: column;
 border-radius: 10px 10px 10px 10px;
 box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
@@ -483,7 +479,6 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
-border: solid .2rem $Black;
 flex-direction: column;
 border-radius: 10px 10px 10px 10px;
 box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
@@ -544,12 +539,37 @@ display:flex;
 width: 100%;
 align-items: center;
 justify-content:center;
+border: solid .2rem $Black;
 margin-bottom: 5%;
 flex-direction: column;
-border: solid .2rem $Black;
 border-radius: 10px 10px 10px 10px;
 box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
+
+.eachInfoOthersLink{
+width: 70%;
+display: flex;
+align-items: center;
+background-color:$Cream;
+overflow: hidden;
+justify-content: center;
+border-radius:10px 10px 10px 10px;
+box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+margin: 0;
+padding: 2%;
+margin-top:2%;
+margin-bottom:2%;
+font-size: 2vh;
+font-family: 'Noto Sans', sans-serif;
+color: $Black;
+font-weight: bold;
+&:hover{
+transition-duration: 1s;
+background-color: $Pink;
+cursor: url(../../components/images/pointer.png),default;
+}
+}
+
 
 .divUrl{
 word-wrap: break-word;
@@ -569,7 +589,6 @@ background-color:$Cream;
 overflow: hidden;
 justify-content: center;
 border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
 box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
 margin: 0;
 padding: 2%;
@@ -595,7 +614,9 @@ justify-content:space-between;
 .boxInformation{
 width: 98%;
 }
-
+.eachInfo{
+font-size: 1.5vh;
+}
 .titleInfo{
 font-size: 2.5vh;
 }

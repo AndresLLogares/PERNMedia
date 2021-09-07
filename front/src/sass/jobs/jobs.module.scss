@@ -28,7 +28,6 @@ display:flex;
 width: 60%;
 padding: 2%;
 border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
 min-height: 10rem;
 max-height: fit-content;
 background-image: linear-gradient(to right top, #d0f4de, #bff0e4, #b1ecec, #a9e6f3, #a9def9);
@@ -353,7 +352,6 @@ justify-content: flex-end;
 
 .infoEducation{
 border-radius:10px 10px 10px 10px;
-border: solid .2rem $Black;
 box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
 margin: 0;
 padding: 2%;
